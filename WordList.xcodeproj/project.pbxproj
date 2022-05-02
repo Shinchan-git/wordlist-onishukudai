@@ -13,6 +13,14 @@
 		EBC800DA282026C200FD4795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC800D8282026C200FD4795 /* Main.storyboard */; };
 		EBC800DC282026C400FD4795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC800DB282026C400FD4795 /* Assets.xcassets */; };
 		EBC800DF282026C400FD4795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC800DD282026C400FD4795 /* LaunchScreen.storyboard */; };
+		EBC800EA2820270300FD4795 /* word_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC800E72820270300FD4795 /* word_blank.png */; };
+		EBC800EB2820270300FD4795 /* fin.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC800E82820270300FD4795 /* fin.png */; };
+		EBC800EC2820270300FD4795 /* title_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC800E92820270300FD4795 /* title_logo.png */; };
+		EBC800EE28202C9000FD4795 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC800ED28202C9000FD4795 /* QuestionViewController.swift */; };
+		EBC800F028202C9C00FD4795 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC800EF28202C9C00FD4795 /* FinishViewController.swift */; };
+		EBC800F228202CB400FD4795 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC800F128202CB400FD4795 /* ListTableViewController.swift */; };
+		EBC800F428202CC400FD4795 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC800F328202CC400FD4795 /* AddViewController.swift */; };
+		EBC800F6282035BD00FD4795 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC800F5282035BD00FD4795 /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		EBC800DB282026C400FD4795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBC800DE282026C400FD4795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBC800E0282026C400FD4795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC800E72820270300FD4795 /* word_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word_blank.png; sourceTree = "<group>"; };
+		EBC800E82820270300FD4795 /* fin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fin.png; sourceTree = "<group>"; };
+		EBC800E92820270300FD4795 /* title_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_logo.png; sourceTree = "<group>"; };
+		EBC800ED28202C9000FD4795 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		EBC800EF28202C9C00FD4795 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		EBC800F128202CB400FD4795 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		EBC800F328202CC400FD4795 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		EBC800F5282035BD00FD4795 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +75,28 @@
 				EBC800D2282026C200FD4795 /* AppDelegate.swift */,
 				EBC800D4282026C200FD4795 /* SceneDelegate.swift */,
 				EBC800D6282026C200FD4795 /* ViewController.swift */,
+				EBC800ED28202C9000FD4795 /* QuestionViewController.swift */,
+				EBC800EF28202C9C00FD4795 /* FinishViewController.swift */,
+				EBC800F128202CB400FD4795 /* ListTableViewController.swift */,
+				EBC800F5282035BD00FD4795 /* ListTableViewCell.swift */,
+				EBC800F328202CC400FD4795 /* AddViewController.swift */,
 				EBC800D8282026C200FD4795 /* Main.storyboard */,
 				EBC800DB282026C400FD4795 /* Assets.xcassets */,
 				EBC800DD282026C400FD4795 /* LaunchScreen.storyboard */,
 				EBC800E0282026C400FD4795 /* Info.plist */,
+				EBC800E62820270300FD4795 /* WordList素材 */,
 			);
 			path = WordList;
+			sourceTree = "<group>";
+		};
+		EBC800E62820270300FD4795 /* WordList素材 */ = {
+			isa = PBXGroup;
+			children = (
+				EBC800E72820270300FD4795 /* word_blank.png */,
+				EBC800E82820270300FD4795 /* fin.png */,
+				EBC800E92820270300FD4795 /* title_logo.png */,
+			);
+			path = "WordList素材";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +157,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC800EA2820270300FD4795 /* word_blank.png in Resources */,
+				EBC800EC2820270300FD4795 /* title_logo.png in Resources */,
 				EBC800DF282026C400FD4795 /* LaunchScreen.storyboard in Resources */,
 				EBC800DC282026C400FD4795 /* Assets.xcassets in Resources */,
+				EBC800EB2820270300FD4795 /* fin.png in Resources */,
 				EBC800DA282026C200FD4795 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC800F028202C9C00FD4795 /* FinishViewController.swift in Sources */,
+				EBC800F6282035BD00FD4795 /* ListTableViewCell.swift in Sources */,
 				EBC800D7282026C200FD4795 /* ViewController.swift in Sources */,
+				EBC800F428202CC400FD4795 /* AddViewController.swift in Sources */,
 				EBC800D3282026C200FD4795 /* AppDelegate.swift in Sources */,
+				EBC800F228202CB400FD4795 /* ListTableViewController.swift in Sources */,
+				EBC800EE28202C9000FD4795 /* QuestionViewController.swift in Sources */,
 				EBC800D5282026C200FD4795 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
